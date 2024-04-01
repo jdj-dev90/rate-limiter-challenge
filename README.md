@@ -15,15 +15,15 @@ This project implements a middleware for Express.js in TypeScript to enforce rat
 
 - **RedisStore**: Utilises Redis for rate limiting data, suitable for high-performance production environments:
 ```typescript
-	import { RedisStore } from './store/RedisStore';
+import { RedisStore } from './store/RedisStore';
 
-	const redisStore = new RedisStore('redis://localhost:6379');
+const redisStore = new RedisStore('redis://localhost:6379');
 ```
 - **MapStore**: An in-memory store using a JavaScript Map, ideal for development or low-traffic environments.
 ```typescript
-	import { MapStore } from './store/MapStore';
+import { MapStore } from './store/MapStore';
 
-	const mapStore = new MapStore();
+const mapStore = new MapStore();
 ```
 
 ## Rate Limiting Configuration
