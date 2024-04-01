@@ -4,6 +4,17 @@
 
 This project implements a middleware for Express.js in TypeScript to enforce rate limiting on API requests, tracking requests per IP address and applying limits over a specified timeframe.
 
+## Setup and Installation
+
+1. **Install dependencies:**
+```bash
+npm install
+```
+2. **Run the application:**
+```bash
+npm run start
+```
+
 ## Features
 
 - **Flexible Rate Limiting**: Different limits for authenticated and unauthenticated users, customisable per endpoint.
@@ -70,6 +81,13 @@ app.get('/api/endpoint1', (req, res) => {
 app.listen(3000, () => {
     console.log('Server listening on http://localhost:3000');
 });
+```
+
+## Testing
+
+Run the automated tests with:
+```bash
+npm run test
 ```
 
 ## Caveats of IP-based Rate Limiting
